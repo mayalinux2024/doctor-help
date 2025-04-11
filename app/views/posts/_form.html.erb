@@ -11,17 +11,24 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :title, style: "display: block" %>
-    <%= form.text_field :title %>
+  <div class="box">
+  <div class="center">
+    <%= form.label :patient, style: "display: block" %>
+    <%= form.text_field :patient %>
   </div>
 
   <div>
-    <%= form.label :body, style: "display: block" %>
-    <%= form.text_area :body %>
+    <%= form.label :case, style: "display: block" %>
+    <%= form.text_area :case %>
   </div>
 
   <div>
-    <%= form.submit %>
+    <%= form.label :gender, style: "display: block" %>
+    <%= form.text_area :gender %>
+  </div>
+
+  <div>
+    <%= form.submit "Submit" %>
   </div>
 <% end %>
+</div>

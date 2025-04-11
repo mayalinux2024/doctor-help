@@ -1,0 +1,17 @@
+<div class = "d-flex align-items-center justify-content-center">
+    <h1> Doctor Page </h1>
+
+</div>
+
+    
+<% if @user %>
+    Logged in as: <%= @user.email %>
+
+    
+    <div>
+    <%= link_to "Patients List", main_path %>
+    </div>
+    <br>
+
+    <%= button_to "Logout", logout_path, method: :delete %>
+<% end %>

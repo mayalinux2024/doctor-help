@@ -3,6 +3,11 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.1.2"
 
+gem 'jquery-rails'
+
+#To authenticate user password
+gem 'bcrypt'
+
 # Solution to error 'Logger::Severity.constants.each do |severity|'
 gem 'concurrent-ruby', '1.3.4'
 

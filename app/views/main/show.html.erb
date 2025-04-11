@@ -1,0 +1,61 @@
+
+<div class = "d-flex align-items-center justify-content-center">
+    <h1> Doctor Page </h1>
+
+</div>
+<div id="posts">
+  <% $posts.each do |post| %>
+    <%= render post %>
+  <% end %>
+</div>
+<br>
+<h2>Graph Representation</h2>
+
+<div id="chart"></div>
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+<script>
+    let options = {
+      chart: { type: 'bar',height: 350, stacked: true, toolbar: {show: true}},
+      series: [{
+        name: 'Flu & Throat infection',
+        data: [0, 3,]
+      }, {
+        name: 'Tummy pain',
+        data: [0, 4,]
+      }, { name: 'Headache/High-Temperature', data: [0,3] }],
+
+      plotOptions: {
+          bar: {
+            
+            dataLabels: {
+              total: {
+                enabled: true,
+                style: {
+                  fontSize: '13px',
+                  fontWeight: 900
+                }
+              }
+            }
+          },
+        },
+
+            xaxis: {title: {text: 'Case'},categories: ['March 2025','April 2025']},
+            yaxis: {title: {text: 'Number of Patients'},min: 0, max: 20},
+            title: {text: 'No. of Patients / Symptoms', align: 'left'}
+        },
+        chart = new ApexCharts(document.querySelector("#chart"), options),
+        logChart = () => console.log(chart),
+        destroyChart = () => {
+            if (chart.Rendered) {
+                chart.destroy();
+                chart.Rendered = false;
+            }
+        };
+
+    chart.render().then(() => chart.Rendered = true);
+
+</script>
+
+<button onclick="logChart()">Log chart</button>
+
+

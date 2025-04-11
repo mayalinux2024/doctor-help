@@ -1,10 +1,13 @@
 <p style="color: green"><%= notice %></p>
 
+
 <%= render @post %>
+<%= link_to @post, new_post_main_path(@post) %>
 
 <div>
-  <%= link_to "Edit this post", edit_post_path(@post) %> |
-  <%= link_to "Back to posts", posts_path %>
 
-  <%= button_to "Destroy this post", @post, method: :delete %>
+  <%= link_to "Edit this patient details", edit_post_path(@post) %> |
+  <%= link_to "Back to patient details", posts_path %>
+
+  <%= button_to "Destroy this patient details", @post, method: :delete %>
 </div>

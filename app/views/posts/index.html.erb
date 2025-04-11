@@ -1,14 +1,22 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Posts</h1>
+
+<h1>Reception</h1>
+
+<br>
 
 <div id="posts">
-  <% @posts.each do |post| %>
+  <% $posts.each do |post| %>
     <%= render post %>
     <p>
-      <%= link_to "Show this post", post %>
+      <%= link_to "Show this patient details", post %>
+      
     </p>
   <% end %>
 </div>
 
-<%= link_to "New post", new_post_path %>
+<div class="box">
+<%= link_to "New Patient", new_post_path %>
+<br>
+</div>
+
