@@ -1,6 +1,6 @@
 # README
 
-This is a Ruby on Rails projects with Postgresql:
+This is a Ruby on Rails project with Postgresql:
 
 # Application Task:
 
