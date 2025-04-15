@@ -1,24 +1,17 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a Ruby on Rails project with Postgresql:
 
-Things you may want to cover:
+# Application Task:
 
-* Ruby version
+## Build a simple Rails application that consists of a receptionist portal & doctor portal, which performs the following tasks:
 
-* System dependencies
+- A single login page for both portals.
 
-* Configuration
+- Receptionists can register a new patient & perform CRUD operations.
 
-* Database creation
+- Doctors can view registered patients & view the graph that represents the number of patients registered vs days.
 
-* Database initialization
+## My Demo Video Solution:
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+https://drive.google.com/file/d/1N6CmVZ-sjoQuwvYQZC4nJhBT6UVRuMvf/view?usp=sharing
